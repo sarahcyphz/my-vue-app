@@ -5,17 +5,58 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.profilePic {
+  border: 4px #53b756aa;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.profilePic:hover {
+  filter: drop-shadow(0 0 2em #53b756aa); 
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  justify-items: center;
+}
+
+.aboutMe {
+  background-color: #53b756aa;
+  border-radius:10px;
+  font-size:16px;
+  width: 70%;
+  margin: 10%;
+  padding: 10%;
+}
+
+.aboutMe:hover {
+  filter: drop-shadow(0 0 2em #53b756aa);
+}
+
+.goals {
+  background-color: #53b756aa;
+  border-radius:10px;
+  font-size:16px;
+  width: 70%;
+  margin: 10%;
+  padding: 10%;
+}
+
+.goals:hover {
+  filter: drop-shadow(0 0 2em #53b756aa);
+}
+
+.hobbies {
+  background-color: #53b756aa;
+  border-radius:10px;
+  font-size:16px;
+  width: 70%;
+  margin: 10%;
+  padding: 10%;
+}
+
+.hobbies:hover {
+  filter: drop-shadow(0 0 2em #53b756aa);
 }
 
 @keyframes logo-spin {
