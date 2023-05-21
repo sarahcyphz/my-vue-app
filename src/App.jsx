@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import profile from './images/profile-pic.jpeg';
+
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+    <h1> Sarah Cyphers </h1>
+     <div className="profilePic">
+      <img src={profile} width = {175} height = {200} alt="" />
+    </div>
+
+    <div className="grid-container">
+
+      <div className="grid-child aboutMe">
+        About Me
+        <p> 
+          I am currently enrolled at OSU pursuing a degree in information systems with a minor in textiles and CIS.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <div className="grid-child goals">
+        Internship Goals
+        <ul>
+          <li>Experience an office environment</li>
+          <li>Meet people and make connections</li>
+          <li>Obtain a better understanding of how programming languages work/interact with eachother</li>
+        </ul>
+      </div>
+
+      <div className="grid-child hobbies">
+        Hobbies
+        <ul>
+          <li>Crocheting</li>
+          <li>Cooking</li>
+          <li>Reading</li>
+          <li>Hiking</li>
+          <li>Painting & Drawing</li>
+          <li>Traveling</li>
+        </ul>
+      </div>
+
+    </div>
     </>
-  )
+  );
 }
 
-export default App
