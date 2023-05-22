@@ -6,12 +6,11 @@ import { useState } from 'React';
 
 export default function App() {
 
-  const listHobbies = Hobbies.map(hobby => 
-    (<li key={hobby.id}> {hobby.description}</li>));
-
   const listGoals = Goals.map(goal =>
     (<li key={goal.id}> {goal.description}</li>));
 
+  const listHobbies = Hobbies.map(hobby => 
+    (<li key={hobby.id}> {hobby.description}</li>));
     
   return (
     <>
@@ -26,18 +25,21 @@ export default function App() {
     <div className="grid-child aboutMe">
         <h2 className="h2"> About Me </h2>
         <p> 
-          I grew up in northern Virginia and moved to Ohio for college. I am currently enrolled at OSU pursuing a degree in information systems with a minor in textiles and CIS. Previously, I was employed at Starbucks where I worked over the course of 2 years.
+          I grew up in northern Virginia and moved to Ohio for college. 
+          I am currently enrolled at OSU pursuing a degree in information systems with a
+          minor in textiles and CIS. Previously, I was employed at Starbucks where I worked over 
+          the course of 2 years.
         </p>
       </div>
 
       <div className="grid-child goals">
         <h2 className="h2"> Internship Goals </h2>
-        <ul>{listGoals}</ul>
+        {listGoals}
       </div>
 
       <div className="grid-child hobbies">
         <h2 className="h2"> My Hobbies </h2>
-        <ul>{listHobbies}</ul>
+        {listHobbies}
       </div>
 
     </div>

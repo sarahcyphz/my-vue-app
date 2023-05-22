@@ -10,9 +10,12 @@
 }
 
 .profilePic {
-  border: 4px #53b756aa;
   grid-column: 2/3;
   grid-row: 1/2;
+}
+
+.profilePic img {
+  border: .4vw solid #53b756aa;
 }
 
 .profilePic:hover {
