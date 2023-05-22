@@ -21,7 +21,7 @@ export default function App() {
     <div className="grid-container">
 
     <div className="grid-child profilePic">
-      <img src={profile} width = {200} height = {200} alt="" />
+      <img src={profile} width = {200} height = {200} alt="my profile pic" />
     </div>
 
     <div className="grid-child aboutMe">
@@ -42,7 +42,7 @@ export default function App() {
       </div>
 
       <div className="grid-child img">
-        <img src={memeP} width = {200} height = {200} alt="" />
+        <img src={memeP} width = {200} height = {200} alt="meme" />
       </div>
 
     </div>
