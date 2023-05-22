@@ -9,10 +9,20 @@
   line-height: 1.1;
 }
 
+.img {
+  padding: 20px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
 .profilePic {
-  border: 4px #53b756aa;
   grid-column: 2/3;
   grid-row: 1/2;
+}
+
+.profilePic img {
+  border-radius: 70%;
+  filter: drop-shadow(0 0 2em #53b756aa);
 }
 
 .profilePic:hover {
@@ -27,6 +37,7 @@
   grid-auto-rows: minmax(150, auto);
 }
 
+/* testing */
 .btn {
   background-color: #53b756aa;
   border-radius:10px;
@@ -40,6 +51,7 @@
 
 .aboutMe {
   background-color: #53b756aa;
+  box-shadow: 3px 3px 7px 1px rgba(0,0,0,.8);
   border-radius:10px;
   font-size:16px;
   width: 70%;
@@ -55,6 +67,7 @@
 
 .goals {
   background-color: #53b756aa;
+  box-shadow: 3px 3px 7px 1px rgba(0,0,0,.8);
   border-radius:10px;
   font-size:16px;
   width: 70%;
@@ -70,8 +83,10 @@
 
 .hobbies {
   background-color: #53b756aa;
+  box-shadow: 3px 3px 7px 1px rgba(0,0,0,.8);
   border-radius:10px;
   font-size:16px;
+  align-items: center;
   width: 70%;
   margin: 10%;
   padding: 10%;
@@ -81,6 +96,19 @@
 
 .hobbies:hover {
   filter: drop-shadow(0 0 2em #53b756aa);
+}
+
+
+.meme {
+  background-color: #53b756aa;
+  border-radius:10px;
+  font-size:16px;
+  align-items: center;
+  width: 70%;
+  margin: 10%;
+  padding: 10%;
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 
 @keyframes logo-spin {

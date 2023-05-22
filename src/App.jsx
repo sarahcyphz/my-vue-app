@@ -1,4 +1,5 @@
-import profile from './images/profile-pic.jpeg';
+import profile from './images/profile-pic.png';
+import memeP from './images/memeP.jpeg';
 import { Hobbies } from './components/hobbiesComp';
 import { Goals } from './components/goalsComp';
 import './App.css'
@@ -7,7 +8,7 @@ import { useState } from 'React';
 export default function App() {
 
   const listHobbies = Hobbies.map(hobby => 
-    (<li key={hobby.id}> {hobby.description}</li>));
+    (<div key={hobby.id}> {hobby.description}</div>));
 
   const listGoals = Goals.map(goal =>
     (<li key={goal.id}> {goal.description}</li>));
@@ -19,25 +20,29 @@ export default function App() {
 
     <div className="grid-container">
 
-    <div className="profilePic">
-      <img src={profile} width = {175} height = {200} alt="" />
+    <div className="grid-child profilePic">
+      <img src={profile} width = {200} height = {200} alt="" />
     </div>
 
     <div className="grid-child aboutMe">
         <h2 className="h2"> About Me </h2>
         <p> 
-          I grew up in northern Virginia and moved to Ohio for college. I am currently enrolled at OSU pursuing a degree in information systems with a minor in textiles and CIS. Previously, I was employed at Starbucks where I worked over the course of 2 years.
+          I grew up in northern Virginia and moved to Ohio for college. I am currently enrolled at The Ohio State University pursuing a degree in information systems with a minor in textiles and CIS. Previously, I was employed at Starbucks where I worked over the course of 2 years.
         </p>
       </div>
 
       <div className="grid-child goals">
         <h2 className="h2"> Internship Goals </h2>
-        <ul>{listGoals}</ul>
+        {listGoals}
       </div>
 
       <div className="grid-child hobbies">
         <h2 className="h2"> My Hobbies </h2>
-        <ul>{listHobbies}</ul>
+        {listHobbies}
+      </div>
+
+      <div className="grid-child img">
+        <img src={memeP} width = {200} height = {200} alt="" />
       </div>
 
     </div>
