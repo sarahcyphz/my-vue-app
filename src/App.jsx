@@ -1,44 +1,43 @@
 import profile from './images/profile-pic.jpeg';
-
+import { Hobbies } from './components/hobbiesComp';
+import { Goals } from './components/goalsComp';
 import './App.css'
+import { useState } from 'React';
 
 export default function App() {
 
+  const listHobbies = Hobbies.map(hobby => 
+    (<li key={hobby.id}> {hobby.description}</li>));
+
+  const listGoals = Goals.map(goal =>
+    (<li key={goal.id}> {goal.description}</li>));
+
+    
   return (
     <>
     <h1> Sarah Cyphers </h1>
-     <div className="profilePic">
-      <img src={profile} width = {175} height = {200} alt="" />
-    </div>
 
     <div className="grid-container">
 
-      <div className="grid-child aboutMe">
-        About Me
+    <div className="profilePic">
+      <img src={profile} width = {175} height = {200} alt="" />
+    </div>
+
+    <div className="grid-child aboutMe">
+        <h2 className="h2"> About Me </h2>
         <p> 
-          I am currently enrolled at OSU pursuing a degree in information systems with a minor in textiles and CIS.
+          I grew up in northern Virginia and moved to Ohio for college. I am currently enrolled at OSU pursuing a degree in information systems with a minor in textiles and CIS. Previously, I was employed at Starbucks where I worked over the course of 2 years.
         </p>
       </div>
 
       <div className="grid-child goals">
-        Internship Goals
-        <ul>
-          <li>Experience an office environment</li>
-          <li>Meet people and make connections</li>
-          <li>Obtain a better understanding of how programming languages work/interact with eachother</li>
-        </ul>
+        <h2 className="h2"> Internship Goals </h2>
+        <ul>{listGoals}</ul>
       </div>
 
       <div className="grid-child hobbies">
-        Hobbies
-        <ul>
-          <li>Crocheting</li>
-          <li>Cooking</li>
-          <li>Reading</li>
-          <li>Hiking</li>
-          <li>Painting & Drawing</li>
-          <li>Traveling</li>
-        </ul>
+        <h2 className="h2"> My Hobbies </h2>
+        <ul>{listHobbies}</ul>
       </div>
 
     </div>
