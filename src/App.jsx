@@ -6,6 +6,15 @@ import { useState } from 'React';
 
 export default function App() {
 
+  const [buttonText, setButtonText] = useState("About Me");
+  var newText = "I grew up in northern Virginia and moved to Ohio for college. I am currently enrolled at OSU pursuing a degree in information systems with a minor in textiles and CIS. Previously, I was employed at Starbucks where I worked over the course of 2 years.";
+  
+  function handleCLick() {
+    setButtonText(newText);
+  }
+
+  // const changeText = (text) => setButtonText(text);
+
   const listGoals = Goals.map(goal =>
     (<li key={goal.id}> {goal.description}</li>));
 
@@ -22,14 +31,8 @@ export default function App() {
       <img src={profile} width = {175} height = {200} alt="" />
     </div>
 
-    <div className="grid-child aboutMe">
-        <h2 className="h2"> About Me </h2>
-        <p> 
-          I grew up in northern Virginia and moved to Ohio for college. 
-          I am currently enrolled at OSU pursuing a degree in information systems with a
-          minor in textiles and CIS. Previously, I was employed at Starbucks where I worked over 
-          the course of 2 years.
-        </p>
+    <div className="grid-child btn">
+        <button onClick={handleCLick}>{buttonText}</button>
       </div>
 
       <div className="grid-child goals">
