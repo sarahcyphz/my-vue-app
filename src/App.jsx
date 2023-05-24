@@ -5,6 +5,7 @@ import github from './images/github.png';
 import linkedIn from './images/linkedIn.png';
 import Hobbies from './components/Hobbies.jsx';
 import Goals from './components/Goals.jsx';
+// import { buttons } from './buttons.js';
 import './App.css';
 
 // renders
@@ -22,13 +23,14 @@ function App() {
         <a href="https://github.com/sarahcyphz" target="_blank">
           <img src={github} width = {45} height = {45} className="logo" alt="Linkedin logo" />
         </a>
-        
+        <div>
+        </div>
       </div>
       <div className="grid-child profilePic">
         <img src={profile} alt="Profile Pic"/>
       </div>
       <div className="grid-child specialBtn">
-        <button className="specialBtn">Click Me</button>
+        <button className="specialBtn" >Click Me</button>
       </div>
       <div className="grid-child aboutMe">
         <h2 className="h2">About Me</h2>
