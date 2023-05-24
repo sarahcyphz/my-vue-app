@@ -9,10 +9,20 @@
   line-height: 1.1;
 }
 
-.img {
-  padding: 20px;
+.meme {
+  background-color: #53b756aa;
+  box-shadow: 3px 3px 7px 1px rgba(0,0,0,.8);
+  border-radius:10px;
+  font-size:16px;
+  width: 70%;
+  padding: 5%;
   grid-column: 2/3;
   grid-row: 3/4;
+}
+
+.meme img {
+  width: 200px;
+  height: 200px;
 }
 
 .profilePic {
@@ -21,8 +31,12 @@
 }
 
 .profilePic img {
+  width: 200px;
+  height: 200px;
   border-radius: 70%;
   filter: drop-shadow(0 0 2em #53b756aa);
+  grid-column: 2/3;
+  grid-row: 4/5;
 }
 
 .profilePic:hover {
@@ -32,22 +46,21 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
+  grid-row-gap: 3em;
   justify-items: center;
   grid-auto-rows: minmax(150, auto);
 }
 
-/* testing 
-.btn {
-  background-color: #53b756aa;
-  border-radius:10px;
-  font-size:16px;
-  padding: 50px;
-  min-height: 30px;
-  min-width: 120px;
+.linkBtn {
   grid-column: 1/2;
-  grid-row: 2/3;
-} */
+  grid-row: 1/2;
+}
+
+.specialBtn {
+  padding: 20%;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
 
 .aboutMe {
   background-color: #53b756aa;
@@ -55,7 +68,6 @@
   border-radius:10px;
   font-size:16px;
   width: 70%;
-  margin: 10%;
   padding: 10%;
   grid-column: 1/2;
   grid-row: 2/3;
@@ -71,7 +83,6 @@
   border-radius:10px;
   font-size:16px;
   width: 70%;
-  margin: 10%;
   padding: 10%;
   grid-column: 2/3;
   grid-row: 2/3;
@@ -88,7 +99,6 @@
   font-size:16px;
   align-items: center;
   width: 70%;
-  margin: 10%;
   padding: 10%;
   grid-column: 3/4;
   grid-row: 2/3;
@@ -96,21 +106,6 @@
 
 .hobbies:hover {
   filter: drop-shadow(0 0 2em #53b756aa);
-}
-
-@keyframes img-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .img {
-    animation: img-spin infinite 20s linear;
-  }
 }
 
 
