@@ -10,9 +10,19 @@
 }
 
 .meme {
-  padding: px;
+  background-color: #53b756aa;
+  box-shadow: 3px 3px 7px 1px rgba(0,0,0,.8);
+  border-radius:10px;
+  font-size:16px;
+  width: 70%;
+  padding: 5%;
   grid-column: 2/3;
   grid-row: 3/4;
+}
+
+.meme img {
+  width: 200px;
+  height: 200px;
 }
 
 .profilePic {
@@ -21,6 +31,8 @@
 }
 
 .profilePic img {
+  width: 200px;
+  height: 200px;
   border-radius: 70%;
   filter: drop-shadow(0 0 2em #53b756aa);
   grid-column: 2/3;
@@ -39,10 +51,15 @@
   grid-auto-rows: minmax(150, auto);
 }
 
-.btn {
+.linkBtn {
   grid-column: 1/2;
   grid-row: 1/2;
+}
 
+.specialBtn {
+  padding: 20%;
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 
 .aboutMe {
@@ -90,7 +107,6 @@
 .hobbies:hover {
   filter: drop-shadow(0 0 2em #53b756aa);
 }
-
 
 
 
