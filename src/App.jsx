@@ -5,6 +5,8 @@ import Buttons  from './Buttons.jsx';
 import Inspos from "./components/Inspo.tsx";
 import Kanyes from "./components/Kanye.tsx";
 import fish from './images/fish.jpeg';
+import kanyeHead from './images/kanyeHead.png';
+import Ages from './components/Age';
 import { useState } from 'react';
 import './App.css';
 
@@ -15,8 +17,8 @@ function App() {
 
   function handleCLick() {
     setFesh(!fesh);
-  
   }
+
   return (
     <>
     <h1>Sarah Cyphers</h1>
@@ -41,6 +43,11 @@ function App() {
       <div className="grid-child specialBtn">
         <button className="specialBtn" onClick={handleCLick}>{(fesh) ? <img src={fish} width = {500} height = {400} /> : "click me" }</button>
       </div>
+      <div className="grid child kanyeBtn">
+        <button className="kanyeBtn"><img src={kanyeHead} width={70} height={100} alt="kanye"/></button>
+        <Kanyes />
+      </div>
+      <Ages />
       </div>
 
     </>
