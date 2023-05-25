@@ -8,7 +8,7 @@ function Buttons() {
     return (
       <>
      <div className="grid-child linkBtn">
-        <h4>Hello!:</h4>
+        <h4>Hello!</h4>
         <a href="https://www.linkedin.com/in/sarah-cyphers" >
         <img src={linkedIn} width = {50} height = {50} className="logo" alt="Linkedin logo" />
       </a>

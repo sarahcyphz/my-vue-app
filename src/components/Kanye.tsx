@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import React from "react";
 
 type Words = { 
     quote: string;
@@ -13,7 +14,7 @@ function Kanyes() {
         .then((response) => response.json())
         .then((data) => setKanye(data))
         .catch((error) => setError(error))
-    });
+    }, []);
     if (error) {
         return (<div> {error.message} </div>)
     }
