@@ -19,6 +19,12 @@ function App() {
     setFesh(!fesh);
   }
 
+  const [seeText, setSeeText] = useState(false);
+
+  function handleSeeClick() {
+    setSeeText(!seeText);
+  }
+
   return (
     <>
     <h1>Sarah Cyphers</h1>
@@ -31,8 +37,7 @@ function App() {
         <p> 
           I grew up in northern Virginia and moved to Ohio for college.
           I am currently enrolled at The Ohio State University pursuing a degree
-          in information systems with a minor in textiles and CIS. Previously, I 
-          was employed at Starbucks where I worked over the course of 2 years.
+          in information systems with a minor in textiles and CIS. .
         </p>
       </div>
         <Goals/>
@@ -44,8 +49,8 @@ function App() {
         <button className="specialBtn" onClick={handleCLick}>{(fesh) ? <img src={fish} width = {500} height = {400} /> : "click me" }</button>
       </div>
       <div className="grid child kanyeBtn">
-        <button className="kanyeBtn"><img src={kanyeHead} width={70} height={100} alt="kanye"/></button>
-        <Kanyes />
+        <button className="kanyeBtn" onClick={handleSeeClick}><img src={kanyeHead} width={70} height={100} alt="kanye"/></button>
+        {seeText && <Kanyes />}
       </div>
       <Ages />
       </div>
