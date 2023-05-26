@@ -24,7 +24,7 @@ function Kanyes() {
     else {
          return ( 
         <div> 
-            {kanye.quote}
+            "{kanye.quote}""
         </div> ); } 
     }
     

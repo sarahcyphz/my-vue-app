@@ -1,12 +1,14 @@
-import memeP from './images/memeP.jpeg';
 import Hobbies from './components/Hobbies.jsx';
 import Goals from './components/Goals.jsx';
 import Buttons  from './Buttons.jsx';
 import Inspos from "./components/Inspo.tsx";
 import Kanyes from "./components/Kanye.tsx";
+import Ages from './components/Age';
+import Paintings from './components/ChicagoArt';
 import fish from './images/fish.jpeg';
 import kanyeHead from './images/kanyeHead.png';
-import Ages from './components/Age';
+import memeP from './images/memeP.jpeg';
+import frame from './images/frame.png';
 import { useState } from 'react';
 import './App.css';
 
@@ -53,6 +55,12 @@ function App() {
         {seeText && <Kanyes />}
       </div>
       <Ages />
+      </div>
+      <div className='grid-container'>
+          <Paintings />
+        <div className='grid-child frame'>
+          <img src={frame} width={400} height={295} alt="frame"/>
+        </div>
       </div>
 
     </>
