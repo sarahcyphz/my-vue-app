@@ -15,14 +15,12 @@ import './App.css';
 // renders
 function App() {
 
-  const [fesh, setFesh] = useState(false);
-
+  const [fesh, setFesh] = useState(false);  
   function handleCLick() {
     setFesh(!fesh);
   }
 
   const [seeText, setSeeText] = useState(false);
-
   function handleSeeClick() {
     setSeeText(!seeText);
   }
@@ -51,8 +49,8 @@ function App() {
         <button className="specialBtn" onClick={handleCLick}>{(fesh) ? <img src={fish} width = {500} height = {400} /> : "click me" }</button>
       </div>
       <div className="grid child kanyeBtn">
-        <button className="kanyeBtn" onClick={handleSeeClick}><img src={kanyeHead} width={70} height={100} alt="kanye"/></button>
-        {seeText && <Kanyes />}
+        <button className="kanyeBtn" onClick={handleSeeClick}><img src={kanyeHead} width={70} height={100} alt="kanye"/></button> 
+        {seeText && <Kanyes />} 
       </div>
       <Ages />
       </div>

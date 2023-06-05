@@ -25,7 +25,7 @@ function Inspos() {
     else {
          return ( 
         <div className="grid-child inspoStyle"> 
-            {inspo.quote}
+            "{inspo.quote}" - {inspo.author}
          </div> ); } 
     }
     

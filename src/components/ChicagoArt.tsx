@@ -13,8 +13,7 @@ const [artworks, setArtworks] = useState<Art[]>([]);  // array of artwork object
 const [error, setError] = useState<Error | null>(null);
 
 useEffect (() => {
-    
-    fetch(`https://api.artic.edu/api/v1/artworks?limit=1`)
+    fetch(`https://api.artic.edu/api/v1/artworks?limit=5`)
     .then((response) => response.json())
     .then((data) => setArtworks(data.data))              // set artworks with fetched data
     .catch((error) => setError(error))
@@ -27,10 +26,12 @@ else if (artworks.length === 0) {                 // if empty
     return <div> loading </div>;
 }
 else {
+    const oneArtwork = artworks[0]; 
+
      return ( 
         <div className='grid-child painting'>
-            <img src={`https://www.artic.edu/iiif/2/${artworks[0].image_id}/full/843,/0/default.jpg`} width={350} height={250} alt={artworks[0].title} />            
-            <div className="paintingTxt">{artworks[0].title}</div>                                                                                             
+            <img src={`https://www.artic.edu/iiif/2/${oneArtwork.image_id}/full/843,/0/default.jpg`} width={350} height={250} alt={oneArtwork.title} />            
+            <div className="paintingTxt">{oneArtwork.title}</div>                                                                                             
         </div>
         
      );} 
