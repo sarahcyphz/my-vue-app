@@ -9,22 +9,6 @@
   line-height: 1.1;
 }
 
-.meme {
-  background-color: #53b756aa;
-  box-shadow: 3px 3px 7px 1px rgba(0,0,0,.8);
-  border-radius:10px;
-  font-size:16px;
-  width: 70%;
-  padding: 5%;
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-
-.meme img {
-  width: 200px;
-  height: 200px;
-}
-
 .profilePic {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -56,159 +40,22 @@
   grid-row: 1/2;
 }
 
-.specialBtn img {
-  width: 600px;
-  height: 500px;
-}
-
-.specialBtn {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  font-size: .75em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-  transition: border-color 0.25s;
-  background-color: #f48fb1;
+.contact {
+  background-color: #ffffff;
+  border-radius:10px;
+  font-size:16px;
+  width: 70%;
+  height: 20vw;
+  padding: 10%;
   grid-column: 1/2;
-  grid-row: 3/4;
+  grid-row: 1/3;
 }
-
-.inspoStyle {
-  font-family: sans-serif;
-  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  align-self: end;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
 .aboutMe {
-  background-color: #53b756aa;
-  box-shadow: 3px 3px 7px 1px rgba(0,0,0,.8);
+  background-color: #ffffff;
   border-radius:10px;
   font-size:16px;
   width: 70%;
   padding: 10%;
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.aboutMe:hover {
-  filter: drop-shadow(0 0 2em #53b756aa);
-}
-
-.goals {
-  background-color: #53b756aa;
-  box-shadow: 3px 3px 7px 1px rgba(0,0,0,.8);
-  border-radius:10px;
-  font-size:16px;
-  width: 70%;
-  padding: 10%;
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.goals:hover {
-  filter: drop-shadow(0 0 2em #53b756aa);
-}
-
-.hobbies {
-  background-color: #53b756aa;
-  box-shadow: 3px 3px 7px 1px rgba(0,0,0,.8);
-  border-radius:10px;
-  font-size:16px;
-  align-items: center;
-  width: 70%;
-  padding: 10%;
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-.hobbies:hover {
-  filter: drop-shadow(0 0 2em #53b756aa);
-}
-
-.kanyeBtn {
-  background-color: #f7dcdc00;
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
-
-.ageBtn {
-  background-color: #c2fbd7;
-  border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 250ms;
-  border: 0;
-  font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  height: 50px;
-  width: 100px;
-}
-
-.ageBtn:hover {
-  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
-}
-
-.painting {
-  margin-top: 50px;
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-.frame {
-  margin-top: 40px;
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-.paintingTxt {
-  font-family: Apple Chancery, cursive;
-  font-style: italic;
-  margin-top: 40px;
-  color: #D5AD6D;
-  background: -webkit-linear-gradient(transparent, transparent),
-  -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
-  background: -o-linear-gradient(transparent, transparent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+  grid-column: 2/4;
+  grid-row: 1/3;
 }
