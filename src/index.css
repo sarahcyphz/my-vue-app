@@ -2,38 +2,31 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif,  Snell-Roundhand;
   line-height: 1.5;
   font-weight: 400;
-  color: #dee4e8;
   background-color: #070605;
 }
 
 h1 {
-  font-size: 3em;
-  line-height: 1.1;
-  margin: 1px;
+  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  margin: .5vw;
+  font-weight: 600;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: .6em 1em;
-  font-size: .75em;
+h2 {
+  font-size: 1.2vw;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  filter: drop-shadow(0 0 .5em #ffa5dbe8);
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  margin: .5vw;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #F2F4FF;
+    background-color: #BFCBD4;
   }
   a:hover {
     color: #747bff;
