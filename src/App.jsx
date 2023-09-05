@@ -1,34 +1,69 @@
-import Hobbies from "./components/Hobbies.jsx";
-import Goals from "./components/Goals.jsx";
-import Buttons from "./Buttons.jsx";
-import Paintings from "./components/ChicagoArt";
-import frame from "./images/frame.png";
-import { useState } from "react";
+import profile from "./images/profile.png";
+import email from "./images/email.svg";
+import github from "./images/github.svg";
+import linkedin from "./images/linkedin.svg";
 import "./App.css";
 
-// renders
 function App() {
   return (
     <>
-      <h1>Sarah Cyphers</h1>
-      <h4>Sarah.Cyphers@neudesic.com</h4>
       <div className="grid-container">
-        <Buttons />
+        <div className="grid-child contact">
+          <div className="grid-child profilePic">
+            <img src={profile} alt="Profile Pic" />
+          </div>
+          <h1>Sarah Cyphers</h1>
+          <h2>Software Developer</h2>
+          <div className="grid-child contactInfo">
+            <div className="info-container">
+              <img src={email} alt="email logo" />
+              <p>Sarah.Cyphers@Nuedesic.com</p>
+            </div>
+            <div className="info-container">
+              <img src={github} alt="github logo" />
+              <p>/sarahcyphz</p>
+            </div>
+            <div className="info-container">
+              <img src={linkedin} alt="linkedin logo" />
+              <p>Sarah-Cyphers</p>
+            </div>
+          </div>
+        </div>
         <div className="grid-child aboutMe">
           <h2 className="h2">About Me</h2>
+          <hr />
           <p>
-            I grew up in northern Virginia and moved to Ohio for college. I am
-            currently enrolled at The Ohio State University pursuing a degree in
-            information systems with a minor in textiles and CIS. .
+            Hello! I am an aspiring software developer, I have minimal
+            experience in the field but am eager to expand my knowledge and
+            skills. I enjoy using my technical skills to tackle business
+            challenges and my creative abilities to craft visually appealing
+            solutions
           </p>
-        </div>
-        <Goals />
-        <Hobbies />
-      </div>
-      <div className="grid-container">
-        <Paintings />
-        <div className="grid-child frame">
-          <img src={frame} width={400} height={295} alt="frame" />
+          <div className="grid-small-container">
+            <div className="grid-child experience">
+              <h3 className="h3">My Experience</h3>
+              <p>
+                I am a management information systems major at The Ohio State
+                University with a minor in computer information science and
+                fashion and retail studies. I currently work as a software
+                developer intern at Neudesic. I also have my AZ-900
+                certification
+              </p>
+            </div>
+            <div className="grid-child skills">
+              <h3 className="h3">My Skills</h3>
+              <ul>
+                <li>Python</li>
+                <li>CSS</li>
+                <li>JavaScript & Typescript</li>
+                <li>React</li>
+                <li>C#</li>
+                <li>SQL</li>
+                <li>COBOL</li>
+                <li>Java</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </>
