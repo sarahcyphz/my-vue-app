@@ -1,12 +1,42 @@
 #root {
-  max-width: 1300px;
   text-align: center;
 }
 
 .h2 {
-  color: #060504aa;
-  font-size: 1em;
-  line-height: 1.1;
+  font-size: 3vw;
+  font-family: Lato, system-ui, Avenir, Helvetica, Arial, sans-serif, Snell-Roundhand;
+  font-style: normal;
+  line-height: normal;
+  margin: .5vw;
+  font-weight: 400;
+  color: #140e0e;
+}
+
+.h3 {
+  font-size: 1.75vw;
+  font-family: Lato, system-ui, Avenir, Helvetica, Arial, sans-serif, Snell-Roundhand;
+  font-style: bold;
+  line-height: normal;
+  margin-bottom: 0vw;
+  font-weight: 600;
+  color: #140e0e;
+}
+
+hr {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #2f5f9d;
+}
+
+p {
+  font-size: 1.25vw;
+  font-family: Lato, system-ui, Avenir, Helvetica, Arial, sans-serif, Snell-Roundhand;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  color: #140e0e;
+  margin: 1vw;
+
 }
 
 .profilePic {
@@ -15,24 +45,20 @@
 }
 
 .profilePic img {
-  width: 200px;
-  height: 200px;
+  width: 15vw;
+  height: 15vw;
   border-radius: 70%;
-  filter: drop-shadow(0 0 2em #53b756aa);
   grid-column: 2/3;
   grid-row: 4/5;
-}
-
-.profilePic:hover {
-  filter: drop-shadow(0 0 2em #53b756aa); 
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 5em;
-  justify-items: center;
-  grid-auto-rows: minmax(150, auto);
+  grid-row-gap: 1em;
+  justify-content: center;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 .linkBtn {
@@ -44,18 +70,78 @@
   background-color: #ffffff;
   border-radius:10px;
   font-size:16px;
-  width: 70%;
-  height: 20vw;
-  padding: 10%;
+  width: 78%;
+  height: 40vw;
+  padding: 3vw;
   grid-column: 1/2;
   grid-row: 1/3;
+  justify-self: end
 }
+
+.contactInfo {
+  background-color: #F3F3F3;
+  border-radius:10px;
+  font-size:16px;
+  width: 80%;
+  height: 30%;
+  padding: 10%;
+  margin-top: 2vw;
+}
+
+.info-container {
+  display: flex; 
+}
+
+.info-container img {
+  width: 12%; 
+  height: auto;
+}
+
 .aboutMe {
   background-color: #ffffff;
   border-radius:10px;
   font-size:16px;
-  width: 70%;
-  padding: 10%;
+  width: 85%;
+  height: 40vw;
+  padding: 3vw;
   grid-column: 2/4;
   grid-row: 1/3;
+  justify-self: center;
 }
+
+.grid-small-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vw;
+  justify-content: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.experience {
+  background-color: #F3F3F3;
+  border-radius:10px;
+  font-size: 18px;
+  width: 80%;
+  height: 22vw;
+  padding: 10%;
+}
+
+.skills {
+  background-color: #F3F3F3;
+  border-radius:10px;
+  height: 22vw;
+  font-size: 1.5vw;
+  padding: 10%;
+}
+
+.skills ul {
+  list-style: none; 
+  padding: 0; 
+  margin-top: 1vw;
+}
+
+
+
+
+

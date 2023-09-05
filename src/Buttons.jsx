@@ -1,7 +1,6 @@
 import github from "./images/github.png";
 import linkedIn from "./images/linkedIn.png";
 import profile from "./images/profile.png";
-import { useState } from "react";
 import "./App.css";
 
 function Buttons() {
